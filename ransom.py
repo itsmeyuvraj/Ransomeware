@@ -17,6 +17,8 @@ class KVBL(BoxLayout):
             if os.path.isfile(file):   #ignore folders
                 files.append(file)
 
+    
+    
     def encrypt(self):
           
             KVBL.makelist()
@@ -60,8 +62,7 @@ class Encryption(App):
         return KVBL()
     
       
-root=Encryption()
-root.run()
+Encryption().run()
 
     
 
